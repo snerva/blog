@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   # get "/articles/:id", to: "articles#show"
   # replace routes with only one
 
-  resources :articles
+  resources :articles do
+   resources :comments
+  end
 end
